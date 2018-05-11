@@ -16,7 +16,7 @@ Uses [react-native-svg](https://github.com/react-native-community/react-native-s
 - [Node.js](https://nodejs.org/)
 - [react-native](https://facebook.github.io/react-native/docs/getting-started.html)
 
-### Install InfiDraw
+### Install InfiniDraw
 
 Clone the repo
 
