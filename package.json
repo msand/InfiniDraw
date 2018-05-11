@@ -1,0 +1,40 @@
+{
+  "name": "InfiniDraw",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "shx rm -f .babelrc",
+    "nativeconf": "npm run clean && shx cp .nativebabelrc .babelrc",
+    "nextconf": "npm run clean && shx cp .nextbabelrc .babelrc",
+    "dev": "npm run nextconf && next",
+    "build": "npm run nextconf && next build",
+    "start": "next start",
+    "native": "npm run nativeconf && node node_modules/react-native/local-cli/cli.js start",
+    "ios": "npm run nativeconf && node node_modules/react-native/local-cli/cli.js run-ios",
+    "android": "npm run nativeconf && node node_modules/react-native/local-cli/cli.js run-android",
+    "test": "jest"
+  },
+  "dependencies": {
+    "next": "^6.0.0",
+    "react": "^16.3.2",
+    "react-art": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-native": "0.55.4",
+    "react-native-svg": "^6.3.1",
+    "react-native-web": "^0.6.1",
+    "react-no-ssr": "^1.1.0",
+    "svgs": "^3.2.1",
+    "zoomable-svg": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-plugin-react-native-web": "^0.6.1",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "^16.3.2",
+    "shx": "^0.2.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
