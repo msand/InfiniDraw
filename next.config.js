@@ -1,5 +1,38 @@
 const webpack = require('webpack');
 
+const babelCore = require('@babel/core');
+
+const { createConfigItem } = babelCore;
+
+const presetItem = createConfigItem(
+  require('next/dist/server/build/babel/preset'),
+  { type: 'preset' },
+);
+const hotLoaderItem = createConfigItem(require('react-hot-loader/babel'), {
+  type: 'plugin',
+});
+const reactJsxSourceItem = createConfigItem(
+  require('@babel/plugin-transform-react-jsx-source'),
+  { type: 'plugin' },
+);
+const reactNativeWebItem = createConfigItem(
+  require('babel-plugin-react-native-web'),
+  { type: 'plugin' },
+);
+
+function babelConfig({ isServer, dev }) {
+  return {
+    cacheDirectory: true,
+    presets: [presetItem],
+    plugins: [
+      dev && !isServer && hotLoaderItem,
+      dev && reactJsxSourceItem,
+      reactNativeWebItem,
+    ].filter(Boolean),
+    babelrc: false
+  };
+}
+
 // Update these to match your package scope name.
 const internalNodeModulesRegExp = /zoomable-svg(?!.*node_modules)/;
 const externalNodeModulesRegExp = /node_modules(?!\/zoomable-svg(?!.*node_modules))/;
@@ -12,6 +45,7 @@ module.exports = {
       return (ctx, req, cb) =>
         internalNodeModulesRegExp.test(req) ? cb() : external(ctx, req, cb);
     });
+    defaultLoaders.babel.options = babelConfig({ isServer, dev });
     config.module.rules.push({
       test: /\.+(js|jsx)$/,
       loader: defaultLoaders.babel,

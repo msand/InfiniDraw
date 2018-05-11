@@ -3,19 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "clean": "shx rm -f .babelrc",
-    "nativeconf": "npm run clean && shx cp .nativebabelrc .babelrc",
-    "nextconf": "npm run clean && shx cp .nextbabelrc .babelrc",
-    "dev": "npm run nextconf && next",
-    "build": "npm run nextconf && next build",
+    "dev": "next",
+    "build": "next build",
     "start": "next start",
-    "native": "npm run nativeconf && node node_modules/react-native/local-cli/cli.js start",
-    "ios": "npm run nativeconf && node node_modules/react-native/local-cli/cli.js run-ios",
-    "android": "npm run nativeconf && node node_modules/react-native/local-cli/cli.js run-android",
+    "native": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
     "test": "jest"
   },
   "dependencies": {
-    "next": "^6.0.0",
+    "next": "^6.0.1",
     "react": "^16.3.2",
     "react-art": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -31,8 +28,7 @@
     "babel-plugin-react-native-web": "^0.6.1",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.4.3",
-    "react-test-renderer": "^16.3.2",
-    "shx": "^0.2.2"
+    "react-test-renderer": "^16.3.2"
   },
   "jest": {
     "preset": "react-native"
