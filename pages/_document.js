@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
         <Head>
           <title>InfiniDraw</title>
         </Head>
-        <body style={{ height: '100%', width: '100%' }}>
+        <body style={{ height: '100%', width: '100%', overflowX: 'hidden' }}>
           <Main />
           <NextScript />
         </body>
