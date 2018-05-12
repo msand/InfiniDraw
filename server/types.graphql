@@ -25,5 +25,7 @@ type User @model {
 type Path @model {
   id: ID! @isUnique
   points: [Float!]!
+  stroke: String! @migrationValue(value: "#000000")
+  strokeWidth: Float! @migrationValue(value: 1)
   createdAt: DateTime!
 }

@@ -1,0 +1,18 @@
+{
+  "README_schema":
+    "Specifies how to load the GraphQL schema that completion, error highlighting, and documentation is based on in the IDE",
+  "schema": {
+    "request": {
+      "url": "https://api.graph.cool/simple/v1/cjh2g1fxn6gsw0108o6ud01ms",
+      "method": "POST",
+      "postIntrospectionQuery": true,
+      "README_options":
+        "See the 'Options' section at https://github.com/then/then-request",
+      "options": {
+        "headers": {
+          "user-agent": "JS GraphQL"
+        }
+      }
+    }
+  }
+}

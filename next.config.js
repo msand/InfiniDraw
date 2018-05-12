@@ -29,13 +29,13 @@ function babelConfig({ isServer, dev }) {
       dev && reactJsxSourceItem,
       reactNativeWebItem,
     ].filter(Boolean),
-    babelrc: false
+    babelrc: false,
   };
 }
 
 // Update these to match your package scope name.
-const internalNodeModulesRegExp = /zoomable-svg(?!.*node_modules)/;
-const externalNodeModulesRegExp = /node_modules(?!\/zoomable-svg(?!.*node_modules))/;
+const internalNodeModulesRegExp = /(?:zoomable-svg|react-native-color|react-native-slider)(?!.*node_modules)/;
+const externalNodeModulesRegExp = /node_modules(?!\/(?:zoomable-svg|react-native-color|react-native-slider)(?!.*node_modules))/;
 
 module.exports = {
   webpack: (config, { dev, isServer, defaultLoaders }) => {
