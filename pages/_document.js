@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
       <html style={{ height: '100%', width: '100%' }}>
         <Head>
           <title>InfiniDraw</title>
+          <meta name="viewport" content="user-scalable=no, width=device-width" />
         </Head>
         <body style={{ height: '100%', width: '100%', overflowX: 'hidden' }}>
           <Main />
