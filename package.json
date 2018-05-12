@@ -12,14 +12,23 @@
     "test": "jest"
   },
   "dependencies": {
+    "apollo-boost": "^0.1.6",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link-ws": "^1.0.8",
+    "apollo-utilities": "^1.0.12",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
+    "isomorphic-unfetch": "^2.0.0",
     "next": "^6.0.1",
     "react": "^16.3.2",
+    "react-apollo": "^2.1.4",
     "react-art": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-native": "0.55.4",
     "react-native-svg": "^6.3.1",
     "react-native-web": "^0.6.1",
     "react-no-ssr": "^1.1.0",
+    "subscriptions-transport-ws": "^0.9.9",
     "svgs": "^3.2.1",
     "zoomable-svg": "^4.0.1"
   },
