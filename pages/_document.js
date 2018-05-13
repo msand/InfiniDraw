@@ -8,6 +8,12 @@ let index = 0;
 // Not required for using of react-native-web, but helps normalize
 // layout for top-level wrapping elements.
 const normalizeNextElements = `
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
   body > div:first-child,
   #__next {
     height: 100%;
@@ -31,12 +37,12 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html style={{ height: '100%', width: '100%' }}>
+      <html>
         <Head>
           <title>InfiniDraw</title>
           <meta name="viewport" content="user-scalable=no, width=device-width" />
         </Head>
-        <body style={{ height: '100%', width: '100%', overflowX: 'hidden' }}>
+        <body>
           <Main />
           <NextScript />
         </body>

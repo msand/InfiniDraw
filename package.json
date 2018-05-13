@@ -26,13 +26,14 @@
     "react-dom": "^16.3.2",
     "react-native": "0.55.4",
     "react-native-color": "^0.0.10",
+    "react-native-slider": "https://github.com/msand/react-native-slider.git#bdbd27a",
     "react-native-svg": "^6.3.1",
     "react-native-web": "^0.6.1",
     "react-no-ssr": "^1.1.0",
     "subscriptions-transport-ws": "^0.9.9",
     "svgs": "^3.2.1",
     "tinycolor2": "^1.4.1",
-    "zoomable-svg": "^4.0.1"
+    "zoomable-svg": "^4.0.2"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
@@ -40,6 +41,9 @@
     "babel-preset-react-native": "4.0.0",
     "jest": "22.4.3",
     "react-test-renderer": "^16.3.2"
+  },
+  "resolutions": {
+    "react-native-slider": "https://github.com/msand/react-native-slider.git#bdbd27a"
   },
   "jest": {
     "preset": "react-native"
