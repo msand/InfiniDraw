@@ -4,10 +4,9 @@ import Document, { Head, Main, NextScript } from 'next/document';
 
 if (process.browser) {
   // prevent pan and zoom on safari
-  document.addEventListener('gesturestart',
-    e => {
-      e.preventDefault();
-    },);
+  document.addEventListener('gesturestart', e => {
+    e.preventDefault();
+  });
   document.documentElement.addEventListener(
     'touchstart',
     e => {
@@ -64,6 +63,7 @@ export default class MyDocument extends Document {
     const styles = [
       <style
         key={index++}
+        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: normalizeNextElements }}
       />,
       getStyleElement(),
@@ -73,7 +73,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <title>InfiniDraw</title>
           <meta

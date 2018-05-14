@@ -1,5 +1,4 @@
-const webpack = require('webpack');
-
+/* eslint-disable import/no-extraneous-dependencies,no-param-reassign */
 const babelCore = require('@babel/core');
 
 const { createConfigItem } = babelCore;
