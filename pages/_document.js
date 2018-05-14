@@ -1,6 +1,6 @@
-import Document, { Head, Main, NextScript } from 'next/document';
 import React from 'react';
 import { AppRegistry } from 'react-native-web';
+import Document, { Head, Main, NextScript } from 'next/document';
 
 if (process.browser) {
   // prevent pan and zoom on safari
