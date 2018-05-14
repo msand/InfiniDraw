@@ -6,7 +6,7 @@ Uses [react-native-svg](https://github.com/react-native-community/react-native-s
 
 ## Try it
 
-[Web version](https://infinidraw-lezcoyqqyq.now.sh)
+[Web version](https://infinidraw-wfwnaaogrs.now.sh/)
 
 [Snack version](https://snack.expo.io/@msand/infinidraw)
 
