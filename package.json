@@ -8,10 +8,8 @@
     "start": "next start",
     "lint": "eslint *.js ./lib ./pages ./server",
     "deploy-backend": "cd server && graphcool deploy",
-    "prettier":
-      "prettier --write --single-quote --trailing-comma=all ./*.js \"./lib/**/*.js\" \"./pages/**/*.js\" \"./server/**/*.js\"",
-    "eslint-check":
-      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "prettier": "prettier --write --single-quote --trailing-comma=all ./*.js \"./lib/**/*.js\" \"./pages/**/*.js\" \"./server/**/*.js\"",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
@@ -46,6 +44,9 @@
     "babel-eslint": "^8.2.3",
     "babel-jest": "22.4.3",
     "babel-plugin-react-native-web": "^0.6.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-react-native": "4.0.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
