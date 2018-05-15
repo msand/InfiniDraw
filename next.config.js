@@ -53,8 +53,10 @@ module.exports = {
     return config;
   },
   webpackDevMiddleware: config => {
-    const ignored = [config.watchOptions.ignored[0], externalNodeModulesRegExp];
-    config.watchOptions.ignored = ignored;
+    config.watchOptions.ignored = [
+      config.watchOptions.ignored[0],
+      externalNodeModulesRegExp,
+    ];
     return config;
   },
 };
