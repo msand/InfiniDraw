@@ -14,10 +14,6 @@ const reactJsxSourceItem = createConfigItem(
   require('@babel/plugin-transform-react-jsx-source'),
   { type: 'plugin' },
 );
-const reactNativeWebItem = createConfigItem(
-  require('babel-plugin-react-native-web'),
-  { type: 'plugin' },
-);
 
 function babelConfig({ isServer, dev }) {
   return {
@@ -26,15 +22,22 @@ function babelConfig({ isServer, dev }) {
     plugins: [
       dev && !isServer && hotLoaderItem,
       dev && reactJsxSourceItem,
-      reactNativeWebItem,
+      [
+        'babel-plugin-module-resolver',
+        {
+          alias: {
+            '^react-native$': 'react-native-web',
+          },
+        },
+      ],
     ].filter(Boolean),
     babelrc: false,
   };
 }
 
 // Update these to match your package scope name.
-const internalNodeModulesRegExp = /(?:zoomable-svg|react-native-color|react-native-slider)(?!.*node_modules)/;
-const externalNodeModulesRegExp = /node_modules(?!\/(?:zoomable-svg|react-native-color|react-native-slider)(?!.*node_modules))/;
+const internalNodeModulesRegExp = /(?:zoomable-svg|react-native-svg|react-native-color|react-native-slider)(?!.*node_modules)/;
+const externalNodeModulesRegExp = /node_modules(?!\/(?:zoomable-svg|react-native-color|react-native-svg|react-native-slider)(?!.*node_modules))/;
 
 module.exports = {
   webpack: (config, { dev, isServer, defaultLoaders }) => {
@@ -50,6 +53,12 @@ module.exports = {
       loader: defaultLoaders.babel,
       include: [internalNodeModulesRegExp],
     });
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'react-native-svg': 'svgs',
+      'react-native$': 'react-native-web',
+    };
+    config.resolve.extensions = ['.web.js', '.js'];
     return config;
   },
   webpackDevMiddleware: config => {
