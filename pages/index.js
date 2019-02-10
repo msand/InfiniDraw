@@ -1,17 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Svg, G, Path, Rect, RadialGradient, Defs, Stop } from 'svgs';
 
-import DrawingComponentFactory from '../lib/drawing';
-
-const App = DrawingComponentFactory(
-  Svg,
-  G,
-  Path,
-  Rect,
-  RadialGradient,
-  Defs,
-  Stop,
-);
+import App from '../lib/drawing';
 
 export default class Root extends PureComponent {
   state = { noSSR: true };

@@ -8125,10 +8125,10 @@ supports-color@^6.0.0, supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svgs@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/svgs/-/svgs-4.0.0.tgz#99613135d06bd42570b405fa8676fcaf60642529"
-  integrity sha512-BPBhyLS7gYLKzGKn74n4wKOcd7Dbr5Kc+oHCNBb26uBA0AvXkmZtfQVCWBxKKunkc8Vs4RI8Z//3siptrThiOA==
+swgs@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/swgs/-/swgs-3.3.0.tgz#7cc8e4a363020b50f695e1bd2d508eddae20c04b"
+  integrity sha512-OeY8i3du8Yz51P44pMXVonvF/EbqfvWEUj1NFSsNFiAM+/Ssk3CusLpScFZ2JTteW8qA8TGequKrhiT4jlTetA==
   dependencies:
     prop-types "^15.5.10"
     rip-out "^1.0.0"
