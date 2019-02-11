@@ -10,6 +10,8 @@ Uses [react-native-svg](https://github.com/react-native-community/react-native-s
 
 [Snack version](https://snack.expo.io/@msand/infinidraw)
 
+[Expo version](https://expo.io/@msand/InfiniDrawExpo)
+
 ## How to use
 
 ### Install dependencies
