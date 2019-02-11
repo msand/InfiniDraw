@@ -8956,6 +8956,7 @@ zen-observable@^0.8.0:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.8.tgz#1ea93995bf098754a58215a1e0a7309e5749ec42"
 
-zoomable-svg@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/zoomable-svg/-/zoomable-svg-4.0.2.tgz#90472d381b3c4bf88355ed0b0803d245f1b0cb75"
+zoomable-svg@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/zoomable-svg/-/zoomable-svg-5.0.0.tgz#34e8461dd7e8b31972285fc8a50675d49152c22e"
+  integrity sha512-1175QyMIHWCuWsGsXfqhJptFF6OgIDgLeuBGjNdlG8eup0CH45clT5dpjLVeTiQMbnDt5UOnrakdoKA/6ZI7Zw==

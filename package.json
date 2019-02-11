@@ -41,7 +41,7 @@
     "subscriptions-transport-ws": "^0.9.15",
     "swgs": "^3.3.0",
     "tinycolor2": "^1.4.1",
-    "zoomable-svg": "^4.0.2"
+    "zoomable-svg": "^5.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
