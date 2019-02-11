@@ -10,7 +10,7 @@ Uses [react-native-svg](https://github.com/react-native-community/react-native-s
 
 [Snack version](https://snack.expo.io/@msand/infinidraw)
 
-[Expo version](https://expo.io/@msand/InfiniDrawExpo)
+[Expo version](https://expo.io/@msand/InfiniDrawExpo) ([source code](https://github.com/msand/InfiniDrawExpo/))
 
 ## How to use
 
