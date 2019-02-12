@@ -1,3 +1,7 @@
 {
-  "version": 2
+  "version": 2,
+  "name": "infinidraw",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ]
 }

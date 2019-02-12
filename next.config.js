@@ -1,4 +1,5 @@
 module.exports = {
+  target: 'serverless',
   webpack: (config, params) => {
     const { defaultLoaders } = params;
     const newConf = config;
