@@ -3,5 +3,6 @@
   "name": "InfiniDraw",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
-  ]
+  ],
+  "alias": ["infinidraw.now.sh", "infinidraw.live"]
 }
