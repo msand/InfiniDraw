@@ -2,7 +2,7 @@
   "version": 2,
   "name": "InfiniDraw",
   "builds": [
-    { "src": "next.config.js", "use": "@now/next" }
+    { "src": "package.json", "use": "@now/static-build" }
   ],
   "alias": ["infinidraw.now.sh", "infinidraw.live"]
 }

@@ -6,6 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "now-build": "next build && next export -o dist",
     "lint": "eslint *.js ./lib ./pages ./server --fix",
     "deploy-backend": "cd server && graphcool deploy",
     "prettier": "prettier --write --single-quote --trailing-comma=all ./*.js \"./lib/**/*.js\" \"./pages/**/*.js\" \"./server/**/*.js\"",
