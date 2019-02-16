@@ -1,12 +1,12 @@
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/msand/InfiniDraw)
 
-# InfiniDraw
+# [InfiniDraw](https://infinidraw.live)
 Universal svg drawing with pan and zoom. Builds on [Next.js](https://github.com/zeit/next.js/) and [react-native-web](https://github.com/necolas/react-native-web) for the web version, and [react-native](https://github.com/facebook/react-native/) for native apps.
 Uses [react-native-svg](https://github.com/react-native-community/react-native-svg/) on native, [svgs](https://github.com/godaddy/svgs) for the web, and [zoomable-svg](https://github.com/msand/zoomable-svg) in both. Kudos to all the makers involved.
 
 ## Try it
 
-[Web version](https://infinidraw.now.sh)
+[Web version](https://infinidraw.live)
 
 [Snack version](https://snack.expo.io/@msand/infinidraw)
 
