@@ -12,6 +12,8 @@ Uses [react-native-svg](https://github.com/react-native-community/react-native-s
 
 [Expo version](https://expo.io/@msand/InfiniDrawExpo) ([source code](https://github.com/msand/InfiniDrawExpo/))
 
+[Android Play store](https://play.google.com/store/apps/details?id=com.infinidraw)
+
 ## How to use
 
 ### Install dependencies
