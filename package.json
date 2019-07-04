@@ -14,7 +14,9 @@
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
@@ -38,7 +40,8 @@
     "subscriptions-transport-ws": "^0.9.15",
     "swgs": "^3.3.0",
     "tinycolor2": "^1.4.1",
-    "zoomable-svg": "^5.0.0"
+    "zoomable-svg": "^5.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -61,5 +64,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "snyk": true
 }
