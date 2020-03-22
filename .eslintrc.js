@@ -10,10 +10,13 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
     'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'all' }],
+    'react/static-property-placement': 0,
+    'react/jsx-props-no-spreading': 0,
     'react/require-default-props': 0,
     'react/no-array-index-key': 0,
     'react/forbid-prop-types': 0,
     'no-underscore-dangle': 0,
+    'max-classes-per-file': 0,
     'react/no-multi-comp': 0,
     'react/prop-types': 0,
     'no-plusplus': 0,

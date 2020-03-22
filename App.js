@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { ApolloProvider } from 'react-apollo';
+import React, {Component} from 'react';
+import {ApolloProvider} from 'react-apollo';
 
 import initApollo from './lib/init-apollo';
 import App from './lib/drawing';

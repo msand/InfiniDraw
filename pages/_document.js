@@ -1,22 +1,22 @@
 import React from 'react';
-import { AppRegistry } from 'react-native-web';
-import Document, { Head, Main, NextScript } from 'next/document';
+import {AppRegistry} from 'react-native-web';
+import Document, {Head, Main, NextScript} from 'next/document';
 
 if (process.browser) {
   // prevent pan and zoom on safari
-  document.addEventListener('gesturestart', e => {
+  document.addEventListener('gesturestart', (e) => {
     e.preventDefault();
   });
   document.documentElement.addEventListener(
     'touchstart',
-    e => {
+    (e) => {
       e.preventDefault();
     },
     false,
   );
   document.addEventListener(
     'touchmove',
-    e => {
+    (e) => {
       e.preventDefault();
     },
     false,
@@ -24,7 +24,7 @@ if (process.browser) {
   let lastTouchEnd = 0;
   document.documentElement.addEventListener(
     'touchend',
-    e => {
+    (e) => {
       const now = new Date().getTime();
       if (now - lastTouchEnd <= 300) {
         e.preventDefault();
@@ -56,19 +56,19 @@ const normalizeNextElements = `
 `;
 
 export default class MyDocument extends Document {
-  static async getInitialProps({ renderPage }) {
+  static async getInitialProps({renderPage}) {
     AppRegistry.registerComponent('Main', () => Main);
-    const { getStyleElement } = AppRegistry.getApplication('Main');
+    const {getStyleElement} = AppRegistry.getApplication('Main');
     const page = renderPage();
     const styles = [
       <style
         key={index++}
         // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: normalizeNextElements }}
+        dangerouslySetInnerHTML={{__html: normalizeNextElements}}
       />,
       getStyleElement(),
     ];
-    return { ...page, styles };
+    return {...page, styles};
   }
 
   render() {
