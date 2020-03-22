@@ -48,6 +48,7 @@ const normalizeNextElements = `
     overflow: hidden;
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
+    touch-action: none;
   }
   body > div:first-child,
   #__next {
