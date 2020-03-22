@@ -1,6 +1,8 @@
-module.exports = {
+const withTM = require('next-transpile-modules')(['react-native-svg']); // pass the modules you would like to see transpiled
+
+module.exports = withTM({
   webpack: (config, params) => {
-    const { defaultLoaders } = params;
+    const {defaultLoaders} = params;
     const newConf = config;
     defaultLoaders.babel.options.plugins = [
       [
@@ -19,4 +21,4 @@ module.exports = {
     newConf.resolve.extensions = ['.web.js', '.js'];
     return newConf;
   },
-};
+});
