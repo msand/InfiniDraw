@@ -17,7 +17,7 @@
     "lint": "eslint *.js ./lib ./pages ./server --fix"
   },
   "dependencies": {
-    "@babel/runtime": "7.9.2",
+    "@babel/runtime": "7.25.9",
     "apollo-boost": "0.4.7",
     "apollo-cache-inmemory": "1.6.5",
     "apollo-client": "2.6.8",
@@ -46,7 +46,7 @@
     "zoomable-svg": "5.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.9.0",
+    "@babel/core": "7.25.9",
     "@react-native-community/eslint-config": "0.0.7",
     "babel-eslint": "10.1.0",
     "babel-jest": "25.1.0",
