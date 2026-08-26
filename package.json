@@ -17,7 +17,7 @@
     "lint": "eslint *.js ./lib ./pages ./server --fix"
   },
   "dependencies": {
-    "@babel/runtime": "7.9.2",
+    "@babel/runtime": "7.29.7",
     "apollo-boost": "0.4.7",
     "apollo-cache-inmemory": "1.6.5",
     "apollo-client": "2.6.8",
