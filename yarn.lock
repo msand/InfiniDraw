@@ -2601,10 +2601,10 @@ babel-plugin-module-resolver@4.0.0:
     reselect "^4.0.0"
     resolve "^1.13.1"
 
-babel-plugin-react-native-web@0.12.2:
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-native-web/-/babel-plugin-react-native-web-0.12.2.tgz#2f36849dd9f4a41644bb8b9c02b804b4257f3443"
-  integrity sha512-bsOhSS39aCqlGxGvSAX52gZWtfu6scOaWsWcJfI8iCOQXO5N7mcLwYUvCASxlZ1IiilRUHjr1J8z7+CAlFDv+A==
+babel-plugin-react-native-web@0.21.3:
+  version "0.21.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-native-web/-/babel-plugin-react-native-web-0.21.3.tgz#8ca49fac8535ef4fe6c10982127d099e1c57a2ff"
+  integrity sha512-e4fG8NbyRvk5GwU/7G2U9WxzPYtpC4IQN28AyRDzKE0kvywgohq8vT2x0/xBfg8a0RfSkXLlHAtUAGlSy3VhAw==
 
 babel-plugin-react-transform@^3.0.0:
   version "3.0.0"
